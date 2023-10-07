@@ -1,3 +1,6 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class CountSubarraysWithGivenSum {
     //leetcode 560
     //https://leetcode.com/problems/subarray-sum-equals-k/description/
@@ -25,4 +28,23 @@ public class CountSubarraysWithGivenSum {
     //        return cnt;
     //    }
     //}
+        public static ArrayList<ArrayList<Integer>> generate(int numRows) {
+            ArrayList<ArrayList<Integer>> ans = new ArrayList<>();
+            for (int i=1;i<=numRows;i++){
+                ArrayList<Integer> l = new ArrayList<>();
+                long a = 1;
+//                l.add((int)a);
+                for (int j=1;j<i+1;j++){
+                    l.add((int)a);
+                    a*=i-j;
+                    a/=j;
+                }
+                ans.add(l);
+            }
+            return ans;
+        }
+    public static void main(String[] args) {
+        System.out.println(generate(5));
+
+    }
 }
