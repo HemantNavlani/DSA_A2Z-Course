@@ -3,7 +3,7 @@ public class SymmetricTree {
 
     //https://leetcode.com/problems/symmetric-tree/
 
-    //dono ka ek sath preorder karo alag alag taraf se aur dekhte jao bas itna hi 
+    //dono ka ek sath preorder karo alag alag taraf se aur dekhte jao bas itna hi
     //class Solution {
     //    public boolean isSymmetric(TreeNode root) {
     //        return (root==null) || solver(root.left,root.right);
