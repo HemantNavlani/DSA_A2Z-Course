@@ -3,7 +3,7 @@ import java.util.*;
 public class MaximumSumCombinations {
 
     //mast question hai logic easy hai but bahut sari cheeze likhni thi read the code you will get it
-    //sorty karlo aur piche se uthao pairs aur heap me dalo aur index bhi store karao heap me bhi and set me bhi aur check kaor agar set me nhi hai toh aage badho iske liye kuch customn classses and uske comparator and funnction bhi likhne pade 
+    //sorty karlo aur piche se uthao pairs aur heap me dalo aur index bhi store karao heap me bhi and set me bhi aur check kaor agar set me nhi hai toh aage badho iske liye kuch customn classses and uske comparator and funnction bhi likhne pade
     //public class Solution {
     //    class Triplet{
     //        int sum;

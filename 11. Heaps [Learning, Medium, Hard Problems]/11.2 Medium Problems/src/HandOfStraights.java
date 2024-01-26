@@ -1,5 +1,4 @@
-import java.util.HashMap;
-import java.util.TreeMap;
+import java.util.*;
 
 public class HandOfStraights {
     //isme bhi simple hai minheap ko avoid kar diya treemap ka use karke logic dekha tha code khud hi kar liya tha
@@ -29,4 +28,22 @@ public class HandOfStraights {
     //        return true;
     //   }
     //}
+    static int minCoins(int []coins, int M, int V) {
+        int res = 0;
+        int i = 0;
+        while (i<coins.length && V!=0){
+            if (coins[i]<=V){
+                V-=coins[i];
+                res+=1;
+            }
+            else i++;
+        }
+        return res;
+    }
+
+    public static void main(String[] args) {
+        int[] coins = {25,10,5};
+        int ans = minCoins(coins,3,30);
+        System.out.println(ans);
+    }
 }
