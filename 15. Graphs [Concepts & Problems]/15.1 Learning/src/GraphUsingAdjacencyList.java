@@ -1,0 +1,44 @@
+import java.util.ArrayList;
+
+public class GraphUsingAdjacencyList {
+
+    public static void main(String[] args) {
+        //For Undirected graphs
+        //M is edges and N is number of Nodes
+        int M = 3, N = 3;
+
+        ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
+
+        // n + 1 tak arraylist bhar bade arraylist me
+
+        for (int i = 0;i<=N;i++){
+            adj.add(new ArrayList<>());
+        }
+
+        //edge 1-2;
+
+
+        adj.get(1).add(2);
+        adj.get(2).add(1);
+
+        //edge 2-3;
+        adj.get(2).add(3);
+        adj.get(3).add(2);
+
+        //edge 1-3;
+        adj.get(1).add(3);
+        adj.get(3).add(1);
+
+
+//        adj.get(u).add(v);
+//        adj.get(v).add(u);
+
+//        In case of directed graph just add edge from one side
+        for (int i = 1;i<=N;i++){
+            for (int j =0;j<adj.get(i).size();j++){
+                System.out.print(adj.get(i).get(j)+" ");
+            }
+            System.out.println();
+        }
+    }
+}

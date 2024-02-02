@@ -3,7 +3,7 @@ public class NonOverLappingIntervals {
     //https://leetcode.com/problems/non-overlapping-intervals/description/
 
 
-    //isme phle arraysort karna hai fir check karte jana hai overlapping ke liye agar overlapping hai toh jiska end bad me hai usko hatana hai minimum end vale ko rakhna hai neetcode vale ki video dekhi thi 
+    //isme phle arraysort karna hai fir check karte jana hai overlapping ke liye agar overlapping hai toh jiska end bad me hai usko hatana hai minimum end vale ko rakhna hai neetcode vale ki video dekhi thi
     //class Solution {
     //    public int eraseOverlapIntervals(int[][] intervals) {
     //        Arrays.sort(intervals,(a,b)->a[0]-b[0]);
