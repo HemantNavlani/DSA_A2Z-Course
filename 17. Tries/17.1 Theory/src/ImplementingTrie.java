@@ -1,4 +1,6 @@
 public class ImplementingTrie {
+    //https://leetcode.com/problems/implement-trie-prefix-tree/
+    //https://www.naukri.com/code360/problems/trie-implementation_1062581?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=SUBMISSION
     //class Node {
     //    Node []links = new Node[26];
     //    boolean flag = false;
